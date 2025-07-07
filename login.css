@@ -1,0 +1,102 @@
+body{
+    background-image: url(components/solo-leveling1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.main{
+    
+    display: flex;
+    align-content: center;
+    justify-content:flex-start;
+    margin-left: 150px;
+}
+.frm{
+    
+    box-shadow: 5px 5px 20px;
+     border: 2px solid rgb(5, 108, 116);
+    width:max-content;
+    margin-top: 70px;
+    padding: 0px 50px 50px 50px;
+    border-radius: 10px;
+    z-index: 1;
+    overflow: hidden;
+     position: relative;
+    transition: 0.5s;
+    background-image: linear-gradient(to top, #d9afd9c6 0%, #97dae1c7 50%,rgba(153, 153, 255, 0.521) 100%);
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+  
+ 
+
+
+input{
+    
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    
+    background-color: rgba(173, 172, 172, 0.32);
+    margin-bottom: 20px;
+    padding: 7px;
+    padding-right: 50px;
+    cursor: pointer;
+    transition: 1s;
+}
+input:focus{
+    outline: none;
+}
+input:hover{
+    border: 2px solid rgb(0, 134, 160);
+    color: rgb(7, 7, 7);
+    transition: 0.3s ease;
+    background-color:transparent;
+}
+.n{
+    
+border-radius: 10px;
+text-decoration: none;
+padding: 5px 10px;
+border: 2px solid rgb(1, 221, 255);
+color:rgb(251, 217, 249);
+font-weight: bold;
+font-family: arial;
+background-color: rgb(1, 221, 255);
+box-shadow: 0 5px 10px black;
+
+}
+h2{
+    color:rgb(0, 242, 255);
+    font-family: arial;
+    letter-spacing: 1px;
+    text-shadow: 0 5px 10px rgb(2, 2, 2);
+}
+.n:hover{
+    color:white;
+    
+    box-shadow: 0 0 20px rgb(1, 221, 255);
+    border-color: rgb(1, 221, 255);
+}
+p{
+    color: rgb(0, 0, 0);
+    align-items: center;
+    font-family:arial ;
+    font-size: big;
+}
+.click{
+    color: rgb(255, 0, 234);
+    
+}
+.click:hover{
+    color: rgb(253, 147, 81);
+}
+::placeholder{
+    color: rgb(146, 109, 144);
+}

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>
+            css properties using jquery
+        </title>
+        <script src="jquery-3.7.1.min.js">
+            
+        </script>
+        <style>
+            #css
+            {
+                height:300px;
+                width:500px;
+                border:2px solid black;
+                font-weight:bold;
+                font-size:20px;
+                text-align:center;
+                background-color: beige;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="css">changing  border color font background color using jquery</div>
+        <p><button id="a"> change border</button>
+            <button id="b">change color</button>
+            <button id="c">change font</button>
+            <button id="d">change bg-color</button>
+            </p>
+            <script>
+                $(document).ready(function(){
+                    $("#a").click(function(){
+                        $("#css").css ({"border":"5px solid red","border-radius":"10px"});
+                    });
+                    $("#b").click(function(){
+                        $("#css").css ("color","red");
+                    });
+                    $("#c").click(function(){
+                        $("#css").css ("font-size","10px");
+                    });
+                    $("#d").click(function(){
+                        $("#css").css ("background-color","yellow");
+                    });
+                });
+
+
+                    
+            </script>
+    </body>
+</html>

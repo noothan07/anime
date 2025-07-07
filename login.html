@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login page</title>
+    <link rel="stylesheet" href="login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+    <div class="frm" align="center">
+        <form name="login_form" onsubmit="return submit_form()">
+        <legend><h2>SUMMON <br>YOUR ACCOUNT</h2>
+            <p>Login and dive into a world beyond reality <br>the anime realm awaits 🔥</p>
+            
+        </legend>
+        
+            <input id="user" type="text" placeholder=" 👤username or email"><br>
+            <input id="pass" type="password"  placeholder=" 🙈Enter password"><br>
+            <input id="cpass" type="password"  placeholder=" 🙈confirm password"><br>
+            <p> dont have an account <br>
+            To create account <a href="signup.html" class="click">click here</a></p>
+            <br>
+            <input type="submit" class="n" value="LOGIN" >
+        </form>
+    </div>
+    </div>
+   
+<script type="text/javascript">
+    function submit_form()
+    {
+        var u =document.getElementById("user").value;
+        var p =document.getElementById("pass").value;
+        var cp=document.getElementById("cpass").value;
+        var letters=/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]+$/;
+        var email=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        let valid=true;
+        if(u==""||p==""||cp=="")
+    {
+        alert("please enter details correctly");
+       valid=false;
+    }
+     else if (!letters.test(u) && !email.test(u)) {
+    errorDiv.innerHTML = "Enter a valid username (letters + numbers) or a valid email address.";
+    valid= false;
+  }
+    else if(p.length > 12)
+    {
+        alert("password maximum lenght is 12");
+       valid=false;
+    }
+    else if(p.length < 6)
+    {
+        alert("password minimum lenght is 6");
+        valid=false;
+    }
+    else if(p!==cp) {
+        alert("passwords must be equal!");
+        valid=false;
+    }
+    else if (/\s/.test(p)) {
+        alert("Password must not contain spaces");
+        valid=false;
+    }
+    // Check for uppercase
+    else if (!/[A-Z]/.test(p)) {
+        alert("Password must include at least one uppercase letter");
+        valid=false;
+    }
+    // Check for lowercase
+    else if (!/[a-z]/.test(p)) {
+         alert("Password must include at least one lowercase letter");
+         valid=false;
+    }
+    // Check for number
+    else if (!/[0-9]/.test(p)) {
+        alert("Password must include at least one number");
+        valid=false;
+    }
+    // Check for special character
+    else if (!/[!@#$%^&*(),.?":{}|<>]/.test(p)) {
+        alert("Password must include at least one special character");
+        valid=false;
+    }
+    
+    if(valid)
+    {
+        alert("login successfully.... redirecting to main page..");
+         setTimeout(() => {
+      window.location="itachi.html";
+    }, 500);
+  }
+
+  return false; 
+    }
+</script>
+ </body>
+ </html>

@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>join page</title>
+        <style>
+        body{
+            background-color: black;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(5px);
+            background-image: url(mountains-7750722.jpg);
+        }
+    
+        .join{
+            font-family: sans-serif; 
+            color:rgb(0, 0, 0);
+            cursor: pointer;
+            
+            
+            
+        }
+        #a{
+            background: transparent;
+            margin: 5px;
+            border-radius: 7px;
+            border: 2px solid rgb(255, 0, 0);
+            color: rgb(0, 0, 0);
+            padding: 5PX;
+            cursor: pointer;
+        }
+        img{
+            border-radius: 1000px;
+            border: 2px solid rgb(204, 255, 0);
+            box-shadow: 0 0 10px rgb(204, 255, 0);
+            float: right;
+        }
+    #b{
+        margin:10px;
+    }
+    .sub{
+        margin-left:30px;
+        
+    }
+        </style>
+    </head>
+    <body>
+        <section class="id" id="ap">
+        <div class="join">
+            <div class="jn">
+                <h1>JOIN US</h1>
+            </div>
+            
+            <div class="ani">
+                <form> 
+                <input type="text" placeholder="enter your name" id="a"> <br>
+                <input type="email" placeholder="enter email" id="a"> <br>
+                <input type="text" placeholder="enter your ph no " id="a"> <br>
+                select gender <br>
+                <input type="radio" name="gender" id="b">Male 
+                <input type="radio" name="gender" id="b"> Female <br>
+                select your age <br>
+                <input type="radio" name="age" id="b">below 18
+                <input type="radio" name="age" id="b"> above 18 <br>
+
+                upload ur image <br>
+                <input type="file" id="b"> <br>
+                <textarea placeholder="enter address" id="a" cols="20" rows="2"></textarea>    <br>
+               <div class="sub">
+                <input type="submit" value="submit" onclick="submit1()" id="a">  <input type="reset" value="reset" id="a">   
+            </div>
+            </form>    
+            </div>
+        </div>
+    </section>
+    <section class="ts" id="be">
+        <div class="poar">
+            <img src="StockCake-Urban Anime Style_1739702960.jpg" alt="image" width="400px" height="400px">
+        </div>
+        
+    </section>
+        <script>
+            function submit1(){
+                alert("thank you for joining with us");
+                window.location="itachi.html";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+h1{
+justify-content: center;
+align-items: center;
+display:flex;
+margin-bottom: 3in;
+margin-top: 3in;
+}
+button{
+
+    padding: 80px 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex3;
+    text-decoration: none;
+    background-color: aqua;
+    margin: 30px;
+    
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+} 
+
+.block{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+
+    animation:appear  linear ;
+    animation-timeline: view();
+    animation-range:entry 0% cover 40%;
+  
+}
+.a{
+    border-radius:20px ;
+}

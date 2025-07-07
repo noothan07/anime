@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>basic jquery webpage</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <style>
+            body{
+                margin: 0;
+                margin-top: 70px;
+                padding: 0;
+                background-color: black;
+            }
+            .a{
+                background-color: rgb(134, 226, 226);
+                height: 30%;
+                align-content: center;
+                font-size:x-large;
+                font-family: arial;
+                font-weight: bold;
+            }
+            .b{
+                background-color: rgb(134, 226, 188);
+                height: 30%;
+                align-content: center;
+                font-size:x-large;
+                font-family: arial;
+                font-weight: bold;
+            }
+            .c{
+                background-color: rgb(252, 199, 248);
+                height: 30%;
+                align-content: center;
+                font-size:x-large;
+                font-family: arial;
+                font-weight: bold;
+            }
+            button{
+                padding: 15px;
+                background-color: transparent;
+                border: 2px solid white;
+                border-radius: 10px;
+                margin: 5px;
+                font-weight: bold;
+
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div  class="a" align="center">
+        <p class="d">The below buttons are used to hide and show</p>
+        <button id="hide">HIDE</button>
+        <button id="show">SHOW</button>
+        <button id="toggle">HIDE & SHOW </button>
+    </div>
+    <div class="b" align="center">
+        <p class="e"> These below buttons are used to fade the elements</p>
+        <button id="fadeout">FADE OUT</button>
+        <button id="fadein">FADE IN</button>
+        <button id="fadeto">FADE TO</button>
+    </div>
+    <div class="c" align="center">
+        <p class="f"> These below buttons are used to slide the elements</p>
+        <button id="slideup">SLIDE UP</button>
+        <button id="slidedown"> SLIDE DOWN</button>
+        <button id="slidetoggle"> SLIDEup & SLIDE down </button>
+    </div>
+        <script>
+            $(function(){
+                //display effects
+                $("#hide").click(function(){
+                    $(".d").hide(500);
+                });
+                $("#show").click(function(){
+                    $(".d").show(500);
+                });
+                $("#toggle").click(function(){
+                    $(".d").toggle(500);
+                });
+                //fade effects
+                $("#fadein").click(function(){
+                  $(".e").fadeIn(500);  
+                });
+                $("#fadeout").click(function(){
+                  $(".e").fadeOut(500);  
+                });
+                $("#fadeto").click(function(){
+                  $(".e").fadeTo(500,0.5);  
+                });
+                //slide effects
+                $("#slideup").click(function(){
+                  $(".f").slideUp(500);  
+                });
+                $("#slidedown").click(function(){
+                  $(".f").slideDown(500);  
+                });
+                $("#slidetoggle").click(function(){
+                  $(".f").slideToggle(500);  
+                });
+            });
+        </script>
+    </body>
+</html>

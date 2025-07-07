@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> date picker using jquery</title>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                background-color: rgb(194, 249, 249);
+                font-family: arial;
+            }
+            div{
+                display: flexbox;
+                justify-items: center;
+                align-items: center;
+                margin-top: 5cm;
+            }
+            p{
+                font-family: Arial;
+                font-weight: bold;
+                font-size: large;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div>
+        <p>JQUERY DATE PICKER</p>
+        <label for="datepicker">ENTER DATE: </label>
+        <input type="text" id="datepicker" placeholder="dd/mm/yy">
+        </div>
+        <script>
+            $(function(){
+                
+                $("#datepicker").datepicker();
+            });
+        </script>
+    </body>
+</html>

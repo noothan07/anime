@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Responsive Slides</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- ResponsiveSlides.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.55/responsiveslides.min.js"></script>
+
+    <style>
+        /* Styling the slider */
+        #slider {
+            max-width: 800px;
+            margin: auto;
+        }
+        #slider img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slideshow Container -->
+    <ul class="rslides" id="slider">
+        <li><img src="" alt="Slide 1"></li>
+        <li><img src="" alt="Slide 2"></li>
+        <li><img src="" alt="Slide 3"></li>
+    </ul>
+
+    <!-- jQuery Script to Activate Slider -->
+    <script>
+        $(document).ready(function () {
+            $("#slider").responsiveSlides({
+                auto: true,        // Auto-slide
+                speed: 500,        // Transition speed
+                timeout: 3000,     // Time between slides
+                pager: true,       // Show pagination
+                nav: true,         // Show navigation
+                random: false,     // Random order
+                pause: true,       // Pause on hover
+                pauseControls: true, // Pause on controls hover
+            });
+        });
+    </script>
+
+</body>
+</html>
