@@ -14,10 +14,13 @@
             <div class="logo">
                 <span class="lgo">AniMate</span>
             </div>
-            
+                <div class="menu-toggle" onclick="toggleNavbar()">
+                    <i class="fas fa-bars"></i>
+                </div>
+
             <div class="navbar">
                 <div class="dropdown">
-                        <a href="#" class="menu list"><i class="fas fa-bars"></i> MENU</a>
+                        <a href="#" class="menu list">MENU</a>
                              <div class="dropdown-content">
                                 <a href="#cont">Home</a>
                                 <a href="#video">Top Rated</a>
@@ -31,9 +34,9 @@
                 
                 <input type="search" class="search" placeholder=" explore anime  ">
                 <a href="#"><input type="submit" class="btn" value="search"></a>
-                <a href="login.html" class="login"><i class="fas fa-user"></i> LOGIN</a>
+                
             </div>
-
+            <a href="login.html" class="login"><i class="fas fa-user"></i> LOGIN</a>
          </nav>
     </header>
     <section class="cont" id="cont">   
@@ -94,5 +97,11 @@
     </p>
   </div>
 </section>
+<script>
+  function toggleNavbar() {
+    document.querySelector('.navbar').classList.toggle('show');
+  }
+</script>
+
 </body>
 </html>

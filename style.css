@@ -8,160 +8,143 @@ body{
     margin: 0px;
     background-color: black;
 }
-header{
-      position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-}
-.ani{
-    backdrop-filter: blur(5px);
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    margin: 0px;
-    box-shadow:0px 1px 12px rgb(62, 62, 62); 
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-   
-   
-}
-.lgo{
-    font-family:cursive;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size:larger;
-    cursor:pointer;
-    animation: disco 1s infinite ease;
-    
-    
-}
-@keyframes disco{
-    0%{
-        color: rgb(255, 98, 0);
-        text-shadow: 0 0 25px; 
-    }
-   
-    50%{
-        color: rgb(0, 238, 255);
-    text-shadow:0 0 25px;
-    }
-    100%{
-        color: rgb(255, 98, 0);
-        text-shadow: 0 0 25px; 
-    }
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 
-.menu{
-    position: relative;
-    color:gray;
-    text-decoration: none;
-    font-family: Arial;
-    font-weight: bold;
-    letter-spacing: 0.5;
-    margin-left: 50px;
-    margin-right: 30px;
+.ani {
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  box-shadow: 0px 1px 12px rgb(62, 62, 62);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
-
-
-.logo
-{
-    flex:1;
+.lgo {
+  font-family: cursive;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: larger;
+  cursor: pointer;
+  animation: disco 1s infinite ease;
 }
 
-.navbar
-{
-    flex:4;
-}
+@keyframes disco {
+  0% {
+    color: rgb(255, 98, 0);
+    text-shadow: 0 0 25px;
+  }
 
-a{
-    
-    color:gray;
-    text-decoration: none;
-    font-family: Arial;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    margin-right: 30px;
-    position: relative;
-}
-.login{
-   
-    text-decoration: none;
-    font-family: arial;
-    font-weight: bold;
-    letter-spacing: 0.5px;
+  50% {
     color: rgb(0, 238, 255);
-    padding: 5px 15px;
-   border-radius: 10px;
-   
-}
-.login:hover{
- color:rgb(10, 120, 130);
+    text-shadow: 0 0 25px;
+  }
 
+  100% {
+    color: rgb(255, 98, 0);
+    text-shadow: 0 0 25px;
+  }
 }
- .search{
-    width: 200px;
-    height:30px;
-    color: red;
-    background: transparent;
-    border: 2px solid rgb(0, 238, 255);
-    border-right: none;
-    font-size: 15px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius:5px ;
- }  
- .search:focus{
-    outline: none;
- }
- .btn{
-    position: relative;
-    height: 30px;
-    width:100px ;
-    background:rgb(255, 0, 0);
-    border: 2px solid rgb(0, 238, 255);
-    color: white;
-    font-size: 15px;
-    border-bottom-right-radius:5px ;
-    border-top-right-radius: 5px;
-    
- }
- .btn:hover{
-    background-color: rgb(0, 238, 255);
-    color: black;
- }
- .list::after{
-    content: "";
-    position: absolute;
-    background-color: red;
-    height: 2.5px;
-    width: 0;
-    left: 45%;
-    transform: translateX(-50%);
-    bottom: -10px;
-    transition: 0.3s;
-    border-radius: 5px ;
- }
-.list:hover{
-    color: red;
-    transform: scale(0.5);
+
+.menu {
+  position: relative;
+  color: gray;
+  text-decoration: none;
+  font-family: Arial;
+  font-weight: bold;
+  letter-spacing: 0.5;
+  margin-left: 50px;
+  margin-right: 30px;
 }
-.list:hover::after{
-    width: 90%;
-   
-}  
+
+.logo {
+  flex: 1;
+}
+
+.navbar {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+  font-family: Arial;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-right: 30px;
+  position: relative;
+}
+
+.login {
+  text-decoration: none;
+  font-family: arial;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: rgb(0, 238, 255);
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.login:hover {
+  color: rgb(10, 120, 130);
+}
+
+.search {
+  width: 200px;
+  height: 30px;
+  color: red;
+  background: transparent;
+  border: 2px solid rgb(0, 238, 255);
+  border-right: none;
+  font-size: 15px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.btn {
+  height: 30px;
+  width: 100px;
+  background: rgb(255, 0, 0);
+  border: 2px solid rgb(0, 238, 255);
+  color: white;
+  font-size: 15px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.btn:hover {
+  background-color: rgb(0, 238, 255);
+  color: black;
+}
+.list:hover {
+  color: red;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
 .dropdown-content {
-  display:none;
+  display: none;
   position: absolute;
-  top:100%; /* space below MENU */
+  top: 100%;
   left: 0;
   border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-color: rgba(4, 4, 4, 0.331);
   min-width: 160px;
   box-shadow: 0 8px 10px rgb(1, 10, 86);
@@ -171,29 +154,28 @@ a{
 
 .dropdown-content a {
   color: white;
-  padding: 15px;
-  padding-left: 50px;
+  padding: 15px 50px;
   display: block;
-  margin: 0px;
+  margin: 0;
   text-decoration: none;
-  transform: scale(1);
   transition: 0.3s ease;
-    align-items: center;
-    justify-content: center;
 }
 
 .dropdown-content a:hover {
   background-color: rgba(78, 78, 78, 0.642);
-  padding-right: 0px;
-    border-radius: 5px;
+  border-radius: 5px;
   transform: scale(1.1);
-  
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
 .content{
     cursor: pointer;
     color: white;
@@ -315,14 +297,15 @@ video:hover{
 }
 .aboutsite{
     background-image:url(components/tanjiro-nezuka.png);
-    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
- font-family: arial;
+
+    font-family: arial;
   display: flex;
   justify-content:flex-start;
   flex-direction: column;
+  padding: 50px;
 }
 
 .about-content {
@@ -358,4 +341,111 @@ padding-right: 10px;
   font-size: 16px;
   line-height: 1.6;
   color: rgb(17, 38, 84);
+}
+@media only screen and (max-width: 600px) {
+  .ani {
+    display: flex;
+    align-items:center;
+    gap: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .navbar.show {
+    display: flex;
+  }
+
+  .navbar a,
+  .navbar .list {
+    width: 100%;
+    text-align: center;
+    padding: 6px 0;
+  }
+
+  .navbar input.search {
+    width: 50%;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .navbar input.btn {
+    width: 20%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 6px;
+  }
+
+  .login {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  .dropdown-content {
+    position: static;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #00000030;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+  h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .video-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .videos{
+    padding-bottom: 30px;
+    background:linear-gradient(to bottom ,violet,orange,red,yellow);
+  }
+  .aboutsite
+  {
+    background:rgb(160, 181, 221);
+    
+  }
+  .about-content{
+    margin:0px;
+    width:fit-content;
+    animation:slide linear ;
+    animation-timeline: view();
+    animation-range:entry 0% cover 40%;
+  }
+  @keyframes slide {
+    from{
+        opacity: 0;
+       transform: translateY(200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  } 
+  .content{
+    background-image: linear-gradient(to bottom,rgb(0, 0, 35),rgb(9, 9, 72),rgb(10, 10, 100),rgb(14, 14, 104));
+  }
 }

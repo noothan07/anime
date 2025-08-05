@@ -41,7 +41,7 @@ body{
 input{
     
     border-radius: 10px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     
     background-color: rgba(173, 172, 172, 0.32);
     margin-bottom: 20px;
@@ -54,7 +54,7 @@ input:focus{
     outline: none;
 }
 input:hover{
-    border: 2px solid rgb(0, 134, 160);
+    border: 1px solid rgb(0, 134, 160);
     color: rgb(7, 7, 7);
     transition: 0.3s ease;
     background-color:transparent;
@@ -80,7 +80,7 @@ h2{
 }
 .n:hover{
     color:white;
-    
+    background-color:rgb(1, 221, 255) ;
     box-shadow: 0 0 20px rgb(1, 221, 255);
     border-color: rgb(1, 221, 255);
 }
@@ -99,4 +99,17 @@ p{
 }
 ::placeholder{
     color: rgb(146, 109, 144);
+}
+@media only screen and (max-width: 600px) {
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       margin-left: 0px;
+       margin-top: 50px;
+    }
+    body{
+        overflow-y: hidden;
+    }
+
 }
