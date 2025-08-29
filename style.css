@@ -27,7 +27,7 @@ header {
 }
 
 .lgo {
-  font-family: cursive;
+  font-family: poppins;
   font-weight: bold;
   letter-spacing: 1px;
   font-size: larger;
@@ -200,7 +200,7 @@ a {
     padding-top: 120px;
 }
 .content p{
-    font-family:cursive;
+    font-family: calibri;
     color: gray;
     font-weight: bold;
     margin-left: 40px;
@@ -265,13 +265,8 @@ video{
     height: auto;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.753);
-    transform: scale(1);
-  transition: transform 0.3s ease;
 }
-video:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-}
+
 .video-box h3{
     margin-left: 20px;
     margin-right: 0px;
