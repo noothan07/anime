@@ -5,10 +5,15 @@
     <link rel="stylesheet" href="signup.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 <body>
-    <div class="main">
-    <div class="frm" align="center">
+    <div class="main" data-aos="zoom-in" data-aos-duration="1000">
+    <div class="frm" align="center" >
         <form name="login_form" onsubmit="return submit_form()">
         <legend><h2>Get Started!</h2>
             <p>Get started with our app,<br>just create an account <br>and enjoy the experience ❤️</p>
@@ -23,6 +28,13 @@
     </div>
     </div>
 <script type="text/javascript">
+
+        AOS.init({
+        duration: 1000,  // animation duration in ms
+        offset: 100,     // offset (px) before triggering animation
+        once: true       // animate only once
+        });
+
     function submit_form()
     {
         var u =document.getElementById("user").value.trim();

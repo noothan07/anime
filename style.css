@@ -103,11 +103,11 @@ a {
   height: 30px;
   color: red;
   background: transparent;
-  border: 2px solid rgb(0, 238, 255);
+  border: 1px solid rgb(0, 238, 255);
   border-right: none;
   font-size: 15px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .search:focus {
@@ -118,11 +118,12 @@ a {
   height: 30px;
   width: 100px;
   background: rgb(255, 0, 0);
-  border: 2px solid rgb(0, 238, 255);
+  border: 1px solid rgb(0, 238, 255);
   color: white;
   font-size: 15px;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: all 0.5s ease;
 }
 
 .btn:hover {
@@ -251,11 +252,7 @@ video{
     align-items: center;
     justify-content: center;
     display: flex;
-     animation:appear linear ;
-    animation-timeline: view();
-    animation-range:entry 0% cover 30%;
 }
-
 .video-box {
     
     
@@ -266,19 +263,6 @@ video{
     justify-items: center;
  
 }
-@keyframes appear{
-    from{
-        opacity: 0;
-        scale: 0;
-        filter: blur(5px);
-    }
-    to{
-        opacity: 1;
-        scale: 1;
-        filter: blur(5px);
-    }
-} 
-
 .video-box video {
     width: 100%;
     height: auto;
@@ -317,19 +301,6 @@ padding-right: 10px;
   background: rgba(109, 122, 169, 0.546);
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
-  animation:slide linear ;
-    animation-timeline: view();
-    animation-range:entry 0% cover 40%;
-}
-@keyframes slide {
-    from{
-        opacity: 0;
-       transform: translateX(-100px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
 } 
 .about-content h2 {
     margin: 0px;
@@ -431,20 +402,7 @@ padding-right: 10px;
   .about-content{
     margin:0px;
     width:fit-content;
-    animation:slide linear ;
-    animation-timeline: view();
-    animation-range:entry 0% cover 40%;
   }
-  @keyframes slide {
-    from{
-        opacity: 0;
-       transform: translateY(200px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-  } 
   .content{
     background-image: linear-gradient(to bottom,rgb(0, 0, 35),rgb(9, 9, 72),rgb(10, 10, 100),rgb(14, 14, 104));
   }
